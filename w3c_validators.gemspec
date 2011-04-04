@@ -11,7 +11,8 @@ Gem::Specification.new do |s|
   s.description = "W3C Validators is a Ruby wrapper for the World Wide Web Consortium's online validation services."
   s.has_rdoc = true
   s.author  = "Alex Dunae"
-  s.add_dependency('nokogiri', 'json')
+  s.add_dependency('nokogiri')
+  s.add_dependency('json')
   s.extra_rdoc_files = ['README.rdoc', 'CHANGELOG', 'LICENSE']
   s.rdoc_options << '--all' << '--inline-source' << '--line-numbers' << '--charset' << 'utf-8'
   s.test_files = ['test/test_css_validator.rb','test/test_exceptions.rb','test/test_feed_validator.rb','test/test_helper.rb','test/test_html5_validator.rb','test/test_markup_validator.rb','test/test_proxy.rb']
